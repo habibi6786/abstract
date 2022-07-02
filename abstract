@@ -1,0 +1,47 @@
+fun main() 
+{
+  var p=Parent()
+  p.age()
+    println("${p.age()}")
+    
+ }
+ abstract class Family{
+    
+  abstract fun age()
+  abstract fun gender()
+ }
+ 
+ class Parent:Family(){
+    var occupation:String=""
+   override fun age(){ 
+       var ages:Int=56
+       println("$ages")
+   }
+   override fun gender(){
+   var gen:String="Female"
+        println("$gen")
+   }
+ }
+class Child1:Family(){
+    override fun age(){   
+        var ages1:Int=12
+         println("$ages1")
+    }
+    override fun gender(){ 
+       var gen1:String= "male"
+         println("$gen1")
+   }
+  var hobby:String=""
+}
+
+class Child2:Family(){
+     var hobby:String=""
+    override fun age(){
+    var ages2:Int=20   
+        println("$ages2")
+    }
+    override fun gender(){ 
+       var gen2:String= "female"
+         println("$gen2")
+   }
+}
